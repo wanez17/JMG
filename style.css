@@ -850,7 +850,11 @@ font-size: 150%;
 
 
 .introtext{
-	font-size: 3em;
+	font-size: 2em;
+}
+
+.introtext2{
+	font-size: 2em;
 }
 
 }
