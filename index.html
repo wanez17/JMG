@@ -7,7 +7,7 @@
     <meta name="description" content="Photography, Website, Jast Media Gallery, Jast, Gallery, JMG photography, videography, video editing, video coverage, graphic design, nsawam, event management, photoshoot, drone service, media, printing, ">
     <meta name="keywords" content="Portfolio Website, Frontend-Developer, mohammedawal.com, Alfa-Awal, Photography, Website, Jast Media Gallery, Jast, Gallery, JMG photography, videography, video editing, video coverage, graphic design, nsawam, event management, photoshoot, drone service, media, printing">
     <meta name="author" content="Mohammed Awal Abdul-Rahim">
-    <title>jastmediagallery.com</title>
+    <title>jastmediagallery website</title>
  
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -73,43 +73,46 @@
 
 <div id="main2" style="margin-left: 10px;">
 
+    GET <strong style="color:green;">5% DISCOUNT</strong> ON ALL SERVICES
+  </h1>
+
  <!--  THIS IS AN EXAMPLE OF THE WEB FORMS -->
 
 <div align="center">
 <h2 style="color:black; font-weight:bold; text-align: center;">Book A Photoshoot Appointment</h2>
 
-<form class="theForm" action="" align="center" method="">
+ <form action="https://formsubmit.co/wanm2467@gmail.com" class="theForm" method="POST" align="center" >
 <p>
   <div class="row">
-  <input type="name" name="" id="name" required placeholder="Enter Name.."> <br><br>
+  <input type="name" name="Name" id="name" required placeholder="Enter Name.."> <br><br>
   </div>
 
   <div class="row">
-  <input type="email" id="email" name="" placeholder="Enter email.."> <br><br>
+  <input type="email" id="email" name="Email" placeholder="Enter email.."> <br><br>
   </div>
 
   <div class="row">
-  <input type="tel" id="number" name="" required placeholder="Enter phone number.."> <br><br>
+  <input type="tel" id="number" name="Phone-Number" required placeholder="Enter phone number.."> <br><br>
   </div>
 
   <div class="row">
-  <input type="date" id="date" name="" required style="width:180px;"> <br><br>
+  <input type="date" id="date" name="Date-of-photoshoot" required style="width:180px;"> <br><br>
   </div>
 
-  <select style="width:180px;">
-    <option style="color:black;">Nsawam</option>
-     <option style="color:black;">Accra</option>
-    <option style="color:black;">Outside these areas</option>
+  <select style="width:180px;" name="Photoshoot-location">
+    <option style="color:black;" value="Nsawam">Nsawam</option>
+     <option style="color:black;" value="Accra">Accra</option>
+    <option style="color:black;" value="Outside-Nsawam">Outside these areas</option>
   </select>
 
   <div class="row">
-  <input type="number" oninput="validateTotalAmount()" id="numberofoutdoorpics" name="" required placeholder="Number of pictures..."> 
+  <input type="number" oninput="validateTotalAmount()" id="numberofoutdoorpics" name="number-of-pictures" required placeholder="Number of pictures..."> 
   </div>
 </p>
 
 <p id="dresslimit" style="color:white; font-weight: bold; font-size: 1.2em; text-align:center; width:180px; font-family: montserrat, sans-serif; background-color: red; display: none; margin-left: auto; margin-right:auto;">Maximum dress change is 3</p>
 
-<h4><span style="font-weight:bold; color: red;">Total:</span> GHS <span id="outdoorshoottotal"style="color:black; font-weight:bolder;"></span></h4>
+<h4><span style="font-weight:bold; color: red;">Total:</span> GHS <span id="outdoorshoottotal"style="background-color:black; padding: 1px 2px; font-weight:bolder;">0</span></h4>
 
 
 <button style="margin-left: auto; margin-right: auto;" onclick="validateTotalCost()">BOOK NOW</button>
@@ -121,13 +124,13 @@
 <hr>
 <!--  THIS IS THE END OF THE WEB FORMS -->
 
-<div style="margin: 30px;">
+<div id="packagesdivcontainer" style="margin: 30px;">
   <div class="offers">
     <h1 class="bold">
     SPECIAL OFFER FOR KIDS
   </h1>
 <div class="photographypackagediv">
-  <table align="center">
+  <table align="center" class="media600upwards">
     <tr>
       <td><h2 class="packageamount" style="color:white;">GHS 300</h2></td>
       <td><h2 class="packageamount" style="color:white;">GHS 250</h2></td>
@@ -149,6 +152,68 @@
      
     </tr>
   </table>
+
+
+<div class="media600pxdownwards">
+  <table align="center" style="box-shadow: 2px 3px 3px black;">
+    <tr>
+      <td><h2 class="packageamount" style="color:white;">GHS 300</h2></td>
+    </tr>
+
+    <tr>
+          <td> <h3>10 Retouch Photos</h3></td>     
+            
+     </tr>
+
+     <tr>
+       <td> <h3>15 x 19 Wooden Frame</h3></td> 
+     </tr>
+     
+    </tr>
+  </table>
+
+<br>
+
+  <table align="center" style="box-shadow: 2px 3px 3px black;">
+    <tr>
+      <td><h2 class="packageamount" style="color:white;">GHS 250</h2></td>
+    </tr>
+
+    <tr> 
+          <td> <h3>6 Retouch Photos</h3></td>    
+            
+     </tr>
+
+          <tr>
+          <td> <h3>15 x 19 Wooden Frame</h3></td>
+          </tr>
+     
+    </tr>
+  </table>
+
+  <br>
+
+  <table align="center" style="box-shadow: 2px 3px 3px black;">
+    <tr>
+      <td><h2 class="packageamount" style="color:white;">GHS 150</h2></td>
+    </tr>
+
+    <tr>
+      <td> <h3>5 Retouch Photos</h3></td>  
+     </tr>
+
+          <tr>
+          <td> <h3>15 x 19 Wooden Frame</h3></td> 
+          </tr>
+     
+    </tr>
+  </table>
+
+
+
+</div>
+
+
   
 </div>
   </div>
@@ -457,18 +522,17 @@ Welcome to Jast Media Gallery</h3>
   <form action="https://formsubmit.co/wanm2467@gmail.com" method="POST">
 
     <label for="fname">Name</label>
-    <input type="text" id="fname" name="firstnamebooking" placeholder="Your name.." required>
+    <input type="text" id="fname" name="name" placeholder="Your name.." required>
 
     <label for="lname">Email</label>
-    <input type="text" id="lname" name="emailbooking" placeholder="Your Email..">
+    <input type="text" id="lname" name="email" placeholder="Your Email..">
 
-    <input type="hidden" name="_autoresponse" value="THANK YOU FOR WORKING WITH US... We look forward to you review... || JMG STUDIO">
 
     <label for="lname">Phone Number</label>
-    <input type="text" id="lname" name="numberbooking" placeholder="Your mobile number.." required>
+    <input type="text" id="lname" name="number" placeholder="Your mobile number.." required>
 
      <label for="event">Select Event</label>
-    <select id="country" name="eventbooking">
+    <select id="country" name="event">
       <option value="naming-ceremony">Naming Ceremony</option>
       <option value="engagement">Engagement</option>
       <option value="wedding">Wedding</option>
@@ -480,7 +544,7 @@ Welcome to Jast Media Gallery</h3>
     <br>
 
     <label for="package">Select Package</label>
-    <select id="package" name="packagebooking">
+    <select id="package" name="package">
       <option value="bronze">Bronze</option>
       <option value="silver">Silver</option>
       <option value="diamond">Diamond</option>
@@ -490,10 +554,10 @@ Welcome to Jast Media Gallery</h3>
 
     <label>Check the number of services you need</label>
     <div style="color: black;">
-    <input type="checkbox" name="photobooking" style="margin:5px;" checked> Photography
-    <input type="checkbox" name="videobooking" style="margin:5px;"> Videography
-    <input type="checkbox" name="bannerandstickerbooking" style="margin:5px;"> Event Media Management
-    <input type="checkbox" name="dronebooking" style="margin:5px;"> Include Drone Service
+    <input type="checkbox" name="pictures" style="margin:5px;" checked> Photography
+    <input type="checkbox" name="video coverage" style="margin:5px;"> Videography
+    <input type="checkbox" name="banner-and-sticker" style="margin:5px;"> Event Media Management
+    <input type="checkbox" name="includedrone" style="margin:5px;"> Include Drone Service
     </div>
     <br>
 
@@ -522,7 +586,7 @@ Welcome to Jast Media Gallery</h3>
     </select>
 
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Any additional information.." style="height:200px"></textarea>
+    <textarea id="subject" name="comment" placeholder="Any additional information.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
 
@@ -545,7 +609,7 @@ Welcome to Jast Media Gallery</h3>
   
         <!----  TWITTER ICON  --->
         <a href="http://www.twitter.com/coDe17lolly" target="_blank">
-        	<svg xmlns="http://www.w3.org/2000/svg" width="40" 
+        	<svg xmlns="http://www.w3.org/2000/svg" width="35" 
             height="40" fill="#1a9cff" class="bi bi-twitter"
             viewBox="0 0 16 16">
   
@@ -567,7 +631,7 @@ Welcome to Jast Media Gallery</h3>
  
         
         <!--==================== YOUTUBE ICON  =============== -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" 
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" 
             height="40" fill="#ed4032" class="bi bi-youtube"
             viewBox="0 0 16 16">
   
@@ -595,13 +659,13 @@ Welcome to Jast Media Gallery</h3>
 
         <!--------------FACEBOOK ICON-------------->
 
-        <a href="https://web.facebook.com/mohammed.wangh.58?_rdc=1&_rdr" target="_blank"><svg style="color: blue" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="blue"></path> </svg>
+        <a href="https://web.facebook.com/mohammed.wangh.58?_rdc=1&_rdr" target="_blank"><svg style="color: blue" xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="blue"></path> </svg>
         </a>
 
 
         <!----  LINKEDIN ICON  --->
 
-        <svg style="color: rgb(74, 104, 222);" xmlns="http://www.w3.org/2000/svg" width="40" height="40" id="linkedinlogo" onClick="informUser()" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" fill="#0032f8"></path> </svg>
+        <svg style="color: rgb(74, 104, 222);" xmlns="http://www.w3.org/2000/svg" width="35" height="40" id="linkedinlogo" onClick="informUser()" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" fill="#0032f8"></path> </svg>
 
     </center>
 	
@@ -634,11 +698,6 @@ Welcome to Jast Media Gallery</h3>
 <script src="jqueryui/jquery-ui.js"></script>
 <script>
 
-$(document).ready(function() {
-
-$("").();
-
-});
 
 </script>
 

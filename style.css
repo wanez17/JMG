@@ -202,21 +202,24 @@ border-bottom-right-radius: 10px;
 
 @keyframes effects {
   0% {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-family: arial;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-family: montserrat;
+    opacity: 0;
   }
 
   50% {
     font-size: 3.5rem;
     font-weight: bolder;
     font-family: montserrat;
+    opacity: 1;
   }
  
   100% {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-family: arial;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-family: montserrat;
+    opacity: 0;
   }
 }
 
@@ -808,66 +811,24 @@ input[type=submit]:hover {
 	color: black;
 }
 
+.media600pxdownwards{
+	display: none;
+}
+
 
 
 /*======================================================================MEDIA QUERY======================================================*/
 
-@media (max-width: 450px) 
+
+@media (max-width: 900px) 
 {
-#name2{
-font-size: 450%;}
-
-#name3{
-font-size: 150%;
-}
-
-#myName{font-size: 150%;
-	padding: 4px;
 	
-}
-
-
-
-.image{
-	display: none;
-
-}
-
-.image1{
+	
+#box-container{
 	display: grid;
-	margin: 2px 3px;
-	padding:5px;
-	border: 1px solid black;
-
+	margin-left: auto;
+	margin-right: auto;
 }
-
-.imgDiv{
-	max-height: 250px;
-	max-width: 300px;
-	display: grid;
-	justify-content: center;
-}
-
-
-.introtext{
-	font-size: 2em;
-}
-
-.introtext2{
-	font-size: 2em;
-}
-
-}
-
-
-
-@media (min-width: 650px) 
-{
-
-.image1{
-	display: none;
-}
-
 }
 
 
@@ -938,16 +899,196 @@ display: block;}
 
 
 
-@media (max-width: 900px) 
+@media(max-width: 600px)
 {
+
+
+.photographypackagediv table tr h2{
+ text-align: center;
+ font-weight: bold;
+ padding-left: 30px;
+ padding-right: 30px;
+}
+
+.photographypackagediv table tr h3{
+ color: black;
+ padding-left: 16px;
+ padding-right: 16px;
+ text-align: left;
+}
+
+.packageamount{
+ padding: 3px;
+ background-color: red;
+}
+
+.photographypackagediv table tr {
+ background-color: skyblue;
+ margin: 3px;
+}
+
+#packagesdivcontainer{
+	margin: 20px;
+}
+
+.media600pxdownwards{
+	display: block;
+}
+
+.media600upwards{
+		display: none;
+	}
+
+
+}
+
+
+
+@media (max-width: 450px) 
+{
+#name2{
+font-size: 450%;}
+
+#name3{
+font-size: 150%;
+}
+
+#myName{font-size: 150%;
+	padding: 4px;
 	
-	
-#box-container{
+}
+
+
+
+.image{
+	display: none;
+
+}
+
+.image1{
 	display: grid;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 2px 3px;
+	padding:5px;
+	border: 1px solid black;
+
 }
+
+.imgDiv{
+	max-height: 250px;
+	max-width: 300px;
+	display: grid;
+	justify-content: center;
 }
+
+
+.introtext{
+	font-size: 2em;
+}
+
+.introtext2{
+	font-size: 2em;
+}
+
+
+.photographypackagediv table tr h2{
+ text-align: center;
+ font-weight: bold;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+.photographypackagediv table tr h3{
+ color: black;
+ padding-left: 10px;
+ padding-right: 10px;
+ text-align: left;
+}
+
+.packageamount{
+ padding: 3px;
+ background-color: red;
+}
+
+.photographypackagediv table tr {
+ background-color: skyblue;
+ margin: 5px;
+}
+
+.landingpage{
+	display: none;
+}
+
+.image1{
+	display: grid;
+	flex-grow: 1;
+	justify-content: center;
+	margin: 1px 1px;
+	height: 350px;
+	padding:2px;
+	border: 1px solid black;
+	max-width: 450px;
+
+}
+
+}
+
+@media (max-width: 340px) 
+{
+
+	#landingpage{
+	display: none;
+}
+
+.introtext{
+padding: 5px;
+margin: 5px;
+font-size: 1em;
+text-shadow: 1px 1px 2px black
+}
+
+.introtext2{
+font-weight:bolder;
+font-size: 1em;
+padding:1px;
+margin: 1px;
+box-shadow: 1px 1px 2px black;
+text-shadow: 1px 1px 2px black;
+}
+
+
+.image1{
+	margin: 2px 3px;
+	height: 300px;
+	padding:2px;
+	border: 1px solid black;
+	max-width: 340px;
+
+}
+
+
+#packagesdivcontainer{
+	margin: 5px;
+}
+
+}
+
+
+
+
+
+
+@media (min-width: 650px) 
+{
+
+.image1{
+	display: none;
+}
+
+}
+
+
+
+
 
 
 
