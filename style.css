@@ -1,0 +1,949 @@
+
+/*===================================================================BASIC STRUCTURE==============================================================*/
+*{
+scroll-behavior: smooth;
+}
+
+#landingpage{
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	
+}
+
+
+#myvid{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+
+.landingcontent{
+	color: black;
+	position: absolute;
+	/*top: 200px;*/
+	top: 320px;
+	left: 0;
+	right: 0;
+	
+
+}
+
+.landingcontent h1{
+	font-family: montserrat, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+.landingcontent button{
+	padding: 0;
+	margin: 0;
+	border-radius: 100vmax;
+	border: 2px solid black;
+	background-color: black;
+	
+}
+
+
+.landingcontent button a{
+	text-decoration: none;
+	color: white;
+}
+
+.landingcontent button h2{
+	font-weight: bolder;
+	margin: 0;
+}
+
+.landingcontent button:hover{
+	border: none;
+	background-color: orange;
+
+}
+
+.landingcontent a:hover{
+	border: none;
+	color: black;
+	
+}
+
+
+body{
+	letter-spacing: 2px;
+	font-family: montserrat, sans-serif;
+
+}
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+
+#navbar{
+	background-color: #000;
+	background-image: url(image/bg.jpg);
+	border: 	2px solid black	;
+padding: 10px;
+margin: 20px;
+
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+
+
+
+}
+
+
+#projectsbar{
+	background-color: #59595b;
+}
+
+
+
+#about{
+	background-color: #9bd5f9;
+	padding: 	10px;
+
+
+}
+
+#contact{
+	background-color: #fbd484;
+}
+
+
+
+/* THIS IS THE BEGINNING OF THE STYLING FOR THE WEB FORMS PART 1 */
+
+.theForm {
+	color: black;
+	display: table;
+	padding: 15px;
+	background: linear-gradient(dodgerblue, white);
+	border: solid 1px linear-gradient(dodgerblue, white);
+	box-shadow: -2px 2px 3px black;
+	width: 250px;
+	margin: 10px;
+}
+
+.row {
+	display: table-row;
+}
+
+.row label {
+	display: table-cell;
+	padding: 2px;
+	text-align: right;
+}
+
+.row input {
+	color: black;
+	display: table-cell;
+	padding: 2px;
+}
+
+
+
+/* THIS IS THE END OF THE STYLING FOR THE WEB FORMS PART 1 */
+
+.offers{
+	color: black;
+	text-align: center;
+
+}
+
+
+.offers h2{
+	color: black;
+}
+
+
+
+.photographypackagediv table tr h2{
+ text-align: center;
+ font-weight: bolder;
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+.photographypackagediv table tr h3{
+ color: black;
+ padding-left: 25px;
+ padding-right: 25px;
+ text-align: left;
+}
+
+.packageamount{
+ padding: 5px;
+ background-color: red;
+}
+
+.photographypackagediv table tr {
+ background-color: skyblue;
+ margin: 5px;
+}
+
+
+
+
+.bold{
+	color: red;
+	font-weight: bolder;
+	animation: effects 1s ease-in-out infinite;
+}
+
+
+
+@keyframes effects {
+  0% {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: arial;
+  }
+
+  50% {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    font-family: montserrat;
+  }
+ 
+  100% {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: arial;
+  }
+}
+
+
+
+
+
+
+
+
+/*===================================================================LINKS STYLE==============================================================*/
+
+*{
+	
+	color: white;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+
+	
+	nav ul li a:hover{
+		color: cyan;
+		box-shadow: 0 0 5px #33ffff;
+					0 0 5px #66ffff;
+
+	border-radius: 5px;
+
+	}
+
+
+
+
+
+
+
+
+/*======================================================================MAIN======================================================*/
+
+#name2{
+
+	font-family: Gothic,geneva,verdana,arial,script;
+	font-weight: bolder;
+	color: #000;
+	font-size: 500%;
+	text-shadow: 2px 2px 3px white;
+	text-align: center;
+	padding: 30px 0;
+
+
+}
+
+#name3{
+	font-family:Montserrat;
+	color: white;
+	font-weight: bold;
+	font-size: 200%;
+	padding-top:15px ;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	background-color: black;
+
+}
+
+
+
+#reason{
+	color: #000;
+	font-size: 150%;
+	font-weight: bolder;
+	margin: 1em;
+	letter-spacing: normal;
+	padding-left: 2em;
+
+
+}
+
+.para1{
+	color: black;
+	font-family: helvetica;
+	font-size: 120%;
+	padding: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	letter-spacing: normal;
+}
+
+
+
+#warning{
+	color: black;
+	font-style: italic;
+	text-align: right;
+	letter-spacing: normal;
+	font-weight: bold;
+}
+
+#projects{
+	padding: 3px;
+	color: #fff;
+	font-size: 200%;
+	font-weight: bolder;
+	margin: 1em;
+	letter-spacing: normal;
+	background-color: black;
+
+
+
+}
+
+ .project1{
+	display: inline-block;
+	padding: 15px;
+	margin-left: 2em;
+	margin-right: 2em;
+	border: 3px solid white;
+}
+
+
+	
+
+#box-container{
+	display: flex;
+	
+	flex-direction:row;
+	justify-content: center;
+
+	
+}
+
+#box-container a:hover{
+	border: 2px solid red;
+	
+}
+
+
+
+#box1{
+	background-color: blue;
+	width: 33%;
+	height: 100%;
+	align-self: center;
+	flex-shrink: 2;
+	flex-grow: 2;
+	margin: 1em;
+
+
+}
+
+#box2{
+	background-color: red;
+	width: 33%;
+	height: 100%;
+	align-self: center;
+	flex-shrink: 2;
+	flex-grow: 2;
+	margin: 1em;
+}
+
+
+#box3{
+	background-color: green;
+	width: 33%;
+	height: 100%;
+	align-self: center;
+	flex-shrink: 2;
+	flex-grow: 2;
+	margin: 1em;
+}
+
+/*
+.serviceheaddiv{
+	display: inline-grid;
+	grid-template-columns: auto-fit;
+	grid-template-rows: auto-fill;
+	min-height: 100px;
+	width: 60%;
+
+
+}
+
+
+
+
+.servicehead{
+	 display: inline-block; 
+	color: black;
+	padding: 8px;
+	
+}
+
+.serviceheaddiv{
+	 display: inline-block; 
+	border: 2px solid black;
+	margin: 5em;
+	padding-top: 0;
+		
+}
+
+.serviceheaddiv h2{
+	background-color: #02a519;
+	padding-top: 0;
+	margin-top: 0;
+	font-size: 200%;
+
+	
+
+}
+
+#service1{
+
+	background-color: #edaf07;
+}
+
+
+#service2{
+	color: white;
+	background-color: #a70404;
+}
+
+#service3{
+	color: black;
+	background-color: #ec7909;
+}
+
+
+
+.subheading{
+	display: block;
+	color: black;
+	
+}
+
+*/
+
+
+
+
+
+
+
+.image{
+	float: left;
+	display: inline-flex;
+	flex-grow: 2;
+	flex-shrink: 2;
+	width: 13%;
+	height: 13%;
+	border: 2px solid black;
+	margin-left: 10px;
+	margin-right: 1em;
+	border-radius: 2px;
+	background-color: white;
+}
+
+
+
+#abttopic{
+	color: black;
+	padding-top: 5px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	text-align: center;
+
+}
+
+.abouttxt{
+	font-family: helvetica,sans-serif;
+	line-height: 2px;
+	display: inline;
+	color: black;
+	font-weight: normal;
+	font-size: 130%;
+	letter-spacing: normal;
+	padding: 2em;
+
+
+	
+
+
+}
+
+#myName{
+
+		font-family: montserrat, helvetica,sans-serif;
+	line-height: 2px;
+	display: inline;
+	color: black;
+	text-shadow: 1px 1px 2px white;
+	font-weight: bold;
+	font-size: 180%;
+	padding: 2px;
+	
+}
+
+
+
+
+.callme{
+	font-family:Quicksand,sans-serif;
+	font-size:250%;
+	text-align:center;
+	font-weight:bolder;
+	color:black;
+	padding-top:0px;
+	padding-bottom:10px;
+
+}
+
+
+.followus{
+	font-family:Quicksand,sans-serif;
+	font-size:250%;
+	text-align:center;
+	font-weight:bolder;
+	color: black;
+	padding:20px 15px;
+	background-color: #ffc44b;
+}
+
+
+.callme2{
+	font-family:Quicksand,sans-serif;
+	font-size:130%;
+	text-align:center;
+	font-weight:bold;
+	color: 	black;
+	padding:10px 15px;
+
+}
+
+
+.callme3{
+	font-family:Quicksand,sans-serif;
+	font-size: 	120%;
+	text-align: 	center;
+	color: 	black;
+	padding: 	10px 15px;
+
+}
+
+.callme4{
+	font-family:Quicksand,sans-serif;
+	font-size: 	120%;
+	text-align: 	center;
+	padding: 	10px 15px;
+		margin: 15px;
+
+
+}
+
+
+.callme4 a{
+	text-decoration: none;
+	color: blue;
+	padding: 8px;
+	padding-bottom: 15px;
+
+}
+
+.callme4 a:hover{
+	color: red;
+}
+
+
+.projectimg{
+	margin: 5px;
+	flex-shrink: 1;
+	max-width: 300px;
+	height: 370px;
+	border:5px solid white	;
+	border-radius: 	15px;
+	box-shadow: 1px 4px 10px black;
+	
+}
+
+.serviceimg{
+	width: 400px;
+	height: 250px;
+	margin: 	5px;
+	margin-top: 0;
+	margin-bottom: 8px;
+	border: 	5px solid white	;
+	box-shadow: 1px 4px 10px black;
+	margin-left: 15px;
+}
+
+
+.mainpackagediv section{
+	border: 2px solid white;
+	margin: 10px;
+}
+
+
+
+
+/*Use the :where pseudo class to remove the specifity of an element
+You can also use the :is pseudo class
+*/
+
+
+
+marquee{
+	color: 	black;
+	font-weight: 	bold;
+	font-family: 	sans-serif	;
+}
+
+
+#learrned img:hover{
+	border: 2px solid white;
+	border-radius: 5px;
+	cursor: pointer;
+	
+}
+
+
+.mainpackagediv section{
+	display: block;
+	margin: 20px 40px;
+	padding: 0;
+}
+
+.mainpackagediv section section{
+	margin: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding:10px;
+	display: grid;
+	}
+
+
+
+.packageheader{
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size:2.5em;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+
+.packagename{
+	text-align: center;
+	font-weight: bolder;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size:1.5em;
+}
+
+.packagesdiv ul{
+	list-style: none;
+}
+
+.packagesdiv ul li{
+	font-size: 1.2em;
+	font-family: montserrat, sans-serif;
+}
+
+
+
+.bronze{
+	color: black;
+	background-color: sandybrown;
+	margin: 10px;
+	border-radius: 100vmax;
+}
+
+.silver{
+	color: black;
+	background-color: silver;
+	margin: 10px;
+	border-radius: 100vmax;
+}
+
+.diamond{
+	color: black;
+	background-color: ghostwhite;
+	margin: 10px;
+	border-radius: 100vmax;
+}
+
+.gold{
+	color: black;
+	background-color: gold;
+	margin: 10px;
+	border-radius: 100vmax;
+}
+
+/*===================================SOCIAL ICONS============================================*/
+
+
+    .bi-twitter {
+        color: #55acee;
+        margin: 5px 20px;
+    }
+  
+    .bi-google {
+        color: #dd4b39;
+        margin: 5px 20px;
+    }
+  
+    .bi-youtube {
+        color: #dd4b39;
+        margin: 5px 20px;
+    }
+
+    #ig{
+    	background-image: linear-gradient(60deg, orange, red, blue);
+    	background-clip: text;
+    	color: transparent;
+    	padding: 5px;
+    	border-radius: 10px;
+
+    }
+
+
+    .bi-instagram{
+    	margin: 5px 20px;
+    }
+
+    .bi-facebook{
+    	margin: 5px 20px;
+    }
+
+    .bi-linkedin{
+    	margin: 5px 20px;
+    	border-radius: 10px;
+    }
+
+    .bi-github{
+    	margin: 5px 20px;
+    }
+
+    .bi:hover{
+    	opacity: 0.6;
+    	    }
+
+
+
+
+   
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  color: black;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.formContainer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.formContainer label{
+	color: red;
+}
+
+.formContainer option{
+	color: black;
+}
+
+
+
+/*======================================================================MEDIA QUERY======================================================*/
+
+@media (max-width: 450px) 
+{
+#name2{
+font-size: 450%;}
+
+#name3{
+font-size: 150%;
+}
+
+#myName{font-size: 150%;
+	padding: 4px;
+	
+}
+
+
+
+.image{
+	display: none;
+
+}
+
+.image1{
+	display: grid;
+	margin: 2px 3px;
+	padding:5px;
+	border: 1px solid black;
+
+}
+
+.imgDiv{
+	max-height: 250px;
+	max-width: 300px;
+	display: grid;
+	justify-content: center;
+}
+
+
+}
+
+
+
+@media (min-width: 650px) 
+{
+
+.image1{
+	display: none;
+}
+
+}
+
+
+
+@media (max-width: 650px) 
+{
+
+	
+#box-container{
+	display: grid;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+.headername{
+	display: none;
+}
+
+
+
+#box1{
+display: block;}
+#box2{
+display: block;}
+#box3{
+	display: block;
+}
+
+
+
+.learned{
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	height: 65px;
+	gap: 40px;
+	justify-content: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+
+	
+}
+
+
+.image{
+	display: none;
+
+}
+
+.image1{
+	display: grid;
+	flex-grow: 1;
+	justify-content: center;
+	margin: 2px 3px;
+	height: 450px;
+	padding:5px;
+	border: 1px solid black;
+	max-width: 600px;
+
+}
+
+ 
+}
+
+
+
+@media (max-width: 900px) 
+{
+	
+	
+#box-container{
+	display: grid;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+
+
+
+
+
+
+
