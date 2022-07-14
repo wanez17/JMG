@@ -23,11 +23,16 @@ scroll-behavior: smooth;
 	color: black;
 	position: absolute;
 	/*top: 200px;*/
-	top: 320px;
+	top: 300px;
 	left: 0;
 	right: 0;
 	
 
+}
+
+.welcometext{
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: red;
 }
 
 .landingcontent h1{
@@ -183,6 +188,17 @@ border-bottom-right-radius: 10px;
  padding: 5px;
  background-color: red;
 }
+
+
+.packagepricetotal{
+	padding: 5px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 0px black;
+	margin: auto auto;
+	font-weight: bolder;
+}
+
 
 .photographypackagediv table tr {
  background-color: skyblue;
@@ -616,12 +632,6 @@ border-bottom-right-radius: 10px;
 
 
 
-/*Use the :where pseudo class to remove the specifity of an element
-You can also use the :is pseudo class
-*/
-
-
-
 marquee{
 	color: 	black;
 	font-weight: 	bold;
@@ -645,9 +655,9 @@ marquee{
 
 .mainpackagediv section section{
 	margin: 10px;
-	margin-left: 20px;
-	margin-right: 20px;
-	padding:10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding:2px;
 	display: grid;
 	}
 
@@ -829,6 +839,12 @@ input[type=submit]:hover {
 	margin-left: auto;
 	margin-right: auto;
 }
+}
+
+@media (max-width: 680px){
+	#landingpage{
+		display: none;
+	}
 }
 
 

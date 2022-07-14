@@ -27,6 +27,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
+        <span class="glyphicon glyphicon-remove" style="display:none;" id="removehamburger"></span>
       </button>
       <a class="navbar-brand" id="logo" href="#">Jast Media Gallery</a>
     </div>
@@ -55,10 +56,10 @@
   </video>
 
 <div class="landingcontent" align="center">
-  <h1 class="introtext" style="padding: 10px; margin: 10px; font-size: 4em; color: orange; text-shadow: 2px 2px 3px black;">WELCOME TO </h1>
+  <h1 class="introtext welcometext" style="padding: 10px; margin: 10px; font-size: 4em; color: red; text-shadow: 2px 2px 3px black; font-family:Brush Script MT, sans-serif; font-size:10em">Welcome To </h1>
   <br>
   <div>
-    <h1 style="font-weight:bolder; color: red; font-size: 5em; background-color: white; padding:2px; margin: 2px; box-shadow: 2px 2px 3px black; text-shadow: 1px 1px 2px black;" class="introtext2">JAST MEDIA GALLERY</h1>
+    <h1 style="font-weight:bolder; color: #fffc00; font-size: 5em; background-color: white; padding:2px; margin: 2px; box-shadow: 2px 2px 3px black; text-shadow: 1px 1px 2px black;" class="introtext2">JAST MEDIA GALLERY</h1>
   </div>
 
   <br>
@@ -83,8 +84,8 @@
 <h2 style="color:black; font-weight:bold; text-align: center;">Book A Photoshoot Appointment</h2>
 
 <p>
-  
- <form action="https://formsubmit.co/wanm2467@gmail.com" class="theForm" method="POST" align="center" >
+
+ <form action="https://formsubmit.co/jastphotography2@gmail.com" class="theForm" method="POST" align="center" >
   <div class="row">
   <input type="name" name="Name" id="name" required placeholder="Enter Name.."> <br><br>
   </div>
@@ -97,24 +98,32 @@
   <input type="tel" id="number" name="Phone-Number" required placeholder="Enter phone number.."> <br><br>
   </div>
 
+  <div class="row" style="color:black; font-weight: bolder; font-size:12px; padding: 2px 0px; margin:3px 20px; display: block; background-color:white">
+    <input type="radio" name="shoot-type" id="studioshoot" value="studio shoot" checked> STUDIO SHOOT</input><span style="color:white;">hh</span><br>
+    <input type="radio" name="shoot-type" value="outdoor shoot" id="outdoorshoot"> OUTDOOR SHOOT</input>
+  </div>
+  <br>
+
   <div class="row">
   <input type="date" id="date" name="Date-of-photoshoot" required style="width:180px;"> <br><br>
   </div>
 
-  <select style="width:180px;" name="Photoshoot-location">
+  <select style="width:180px; display: none;" name="Photoshoot-location" id="shootlocation">
     <option style="color:black;" value="Nsawam">Nsawam</option>
      <option style="color:black;" value="Accra">Accra</option>
     <option style="color:black;" value="Outside-Nsawam">Outside these areas</option>
   </select>
 
   <div class="row">
-  <input type="number" oninput="validateTotalAmount()" id="numberofoutdoorpics" name="number-of-pictures" required placeholder="Number of pictures..."> 
+  <input type="number" oninput="validateTotalAmount()" id="numberofoutdoorpics" name="number-of-pictures" required placeholder="Number of pictures..." > 
   </div>
+  
 </p>
 
 <p id="dresslimit" style="color:white; font-weight: bold; font-size: 1.2em; text-align:center; width:180px; font-family: montserrat, sans-serif; background-color: red; display: none; margin-left: auto; margin-right:auto;">Maximum dress change is 3</p>
 
-<h4><span style="font-weight:bold; color: red;">Total:</span> GHS <span id="outdoorshoottotal"style="background-color:black; padding: 1px 2px; font-weight:bolder;">0</span></h4>
+<h4><span style="font-weight:bold; color: red;">Outdoor:</span> GHS <span id="outdoorshoottotal"style="background-color:black; padding: 1px 2px; font-weight:bolder;">0</span></h4>
+<h4><span style="font-weight:bold; color: red;">Studio:</span> GHS <span id="studioshoottotal"style="background-color:black; padding: 1px 2px; font-weight:bolder;">0</span><span style="visibility: hidden;">1</span></h4>
 
 
 <input type="submit" value="BOOK NOW" style="margin-left: auto; margin-right: auto;" onclick="validateTotalCost()">
@@ -247,6 +256,7 @@
         <li>200 softcopy pictures</li>
         <li>Bridal Shower</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 1999</h2>
     </section>
 
     <section>
@@ -259,18 +269,7 @@
         <li>200 softcopy pictures on pendrive</li>
         <li>Bridal Shower</li>
       </ul>
-    </section>
-
-    <section>
-      <h1 class="packagename diamond">DIAMOND</h1>
-      <ul>
-        <li>Medium size photobook</li>
-        <li>Traditional/White Wedding Video</li>
-        <li>1-2 minutes trailer</li>
-        <li>1 HD wooden frame</li>
-        <li>200 softcopy pictures on pendrive</li>
-        <li>Bridal Shower</li>
-      </ul>
+      <h2 class="packagepricetotal">GHS 2800</h2>
     </section>
 
     <section>
@@ -282,9 +281,11 @@
         <li>Drone Service</li>
         <li>1-2 minutes trailer</li>
         <li>2 HD wooden frame</li>
-        <li>400 softcopy pictures on pendrive</li>
+        <li>400 softcopies of pictures on pendrive</li>
         <li>Bridal Shower</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 3800</h2>
+    </section>
     </section>
 
   </div>
@@ -299,51 +300,46 @@
       <section>
       <h1 class="packagename bronze">BRONZE</h1>
       <ul>
-        <li>Medium size photobook</li>
-        <li>Traditional/White Wedding Video</li>
-        <li>1-2 minutes trailer</li>
-        <li>1 HD wooden frame</li>
-        <li>200 softcopy pictures on pendrive</li>
-        <li>Bridal Shower</li>
+        <li>20 printed pictures</li>
+        <li>50 softcopy pictures</li>
+        <li>1 wooden frame</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 600</h2>
     </section>
 
     <section>
       <h1 class="packagename silver">SILVER</h1>
       <ul>
-        <li>Medium size photobook</li>
-        <li>Traditional/White Wedding Video</li>
-        <li>1-2 minutes trailer</li>
-        <li>1 HD wooden frame</li>
-        <li>200 softcopy pictures on pendrive</li>
-        <li>Bridal Shower</li>
+        <li>50 printed pictures</li>
+        <li>Digital Album</li>
+        <li>200 softcopy pictures</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 960</h2>
     </section>
 
     <section>
       <h1 class="packagename diamond">DIAMOND</h1>
      <ul>
-        <li>Medium size photobook</li>
-        <li>Traditional/White Wedding Video</li>
-        <li>1-2 minutes trailer</li>
+        <li>Video on pendrive</li>
+        <li>100 printed pictures</li>
+        <li>Digital Album</li>
         <li>1 HD wooden frame</li>
-        <li>200 softcopy pictures on pendrive</li>
-        <li>Bridal Shower</li>
+        <li>2 camera works</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 1850</h2>
     </section>
 
     <section>
       <h1 class="packagename gold">GOLD</h1>
       <ul>
-        <li>Photobook</li>
-        <li>Traditional/White Wedding Video</li>
-        <li>WhatsApp video invitation</li>
+        <li>Video on pendrive</li>
+        <li>100-200 photobook</li>
+        <li>1 HD wooden frame</li>
         <li>Drone Service</li>
-        <li>1-2 minutes trailer</li>
-        <li>2 HD wooden frame</li>
-        <li>400 softcopy pictures on pendrive</li>
-        <li>Bridal Shower</li>
+        <li>100 softcopy pictures</li>
+        <li>2 camera works</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 2450</h2>
     </section>
 
   </div>
@@ -362,6 +358,7 @@
         <li>Video on pendrive</li>
         <li>1-2 minutes trailer</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 1550</h2>
     </section>
 
     <section>
@@ -374,6 +371,7 @@
         <li>150 softcopy pictures</li>
         <li>Drone Service</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 2899</h2>
     </section>
 
     <section>
@@ -385,6 +383,7 @@
         <li>200 softcopy pictures on pendrive</li>
         <li>Drone Service</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 3550</h2>
     </section>
 
     <section>
@@ -397,6 +396,7 @@
         <li>Live coverage</li>
         <li>300 softcopy pictures on pendrive</li>
       </ul>
+      <h2 class="packagepricetotal">GHS 5850</h2>
     </section>
 
   </div>
@@ -521,7 +521,7 @@ Welcome to Jast Media Gallery</h3>
 
 <div class="formContainer">
   <h1 class="callme" id="bookus">BOOK US FOR AN EVENT</h1>
-  <form action="https://formsubmit.co/wanm2467@gmail.com" method="POST">
+  <form action="https://formsubmit.co/jastphotography2@gmail.com" method="POST">
 
     <label for="fname">Name</label>
     <input type="text" id="fname" name="name" placeholder="Your name.." required>
@@ -568,7 +568,7 @@ Welcome to Jast Media Gallery</h3>
 
     <label>How long do you need our service?</label>
     <div style="color: black;">
-    <input type="radio" name="days" value="1DAY" style="margin: 5px;"> 1 Day
+    <input type="radio" name="days" value="1DAY" style="margin: 5px;" checked> 1 Day
     <input type="radio" name="days" value="2DAYS" style="margin: 5px;"> 2 days
     <input type="radio" name="days" value="3DAYS" style="margin: 5px;"> 3 days
     <input type="radio" name="days" value="more-than-3-days" style="margin: 5px;"> More than 3 days
@@ -630,7 +630,7 @@ Welcome to Jast Media Gallery</h3>
         </svg>
         </a>
 
- 
+        <!-- www.instagram.com/jastphotography_official-->
         
         <!--==================== YOUTUBE ICON  =============== -->
         <svg xmlns="http://www.w3.org/2000/svg" width="35" 
@@ -672,7 +672,7 @@ Welcome to Jast Media Gallery</h3>
     </center>
 	
 
-	<h1 class="callme3">Phone: <b style="color: black;">(+233) 548 060 259</b>  </h1>
+	<h1 class="callme3">Location:<b style="color: black;">Nsawam Crossing | Above The AirtelTigo Office | GHANA.</b>  </h1>
 	<h1 class="callme3">Email: <b style="color: black;">jastmediagallery@gmail.com</b>  </h1>
 	<br>
 	<a href="#logo"><input type="button" id="backToTop" class="btn btn-primary btn-block" value="Back To Top"></button></a>
@@ -688,7 +688,10 @@ Welcome to Jast Media Gallery</h3>
 	<br>
 </div>
 
-<h4 style="text-align: center;"><span style="color:black; padding: 10px;">Copyright&copy2022 | Jast Media Gallery</span></h4>
+<h4 style="text-align: center;">
+Copyright 2020-2022 by <span style="color:  blue;">Jast Media Gallery</span>. All Rights Reserved.
+Jast Media Gallery is Powered by Bootsrap.
+</h4>
 
 
 
@@ -698,7 +701,29 @@ Welcome to Jast Media Gallery</h3>
 <script src="jquery.js"></script>
 <script src="jquery.js"></script>
 <script src="jqueryui/jquery-ui.js"></script>
+<script></script>
 <script>
+
+
+
+$(document).ready(function() {
+
+$("#outdoorshoot").click(function() {
+
+$("#shootlocation").show();
+
+
+  });
+
+
+$("#studioshoot").click(function() {
+
+$("#shootlocation").hide();
+
+
+  });
+
+});
 
 
 </script>

@@ -1,5 +1,6 @@
 var outdoorPics = document.getElementById("numberofoutdoorpics");
 var totalOutdoorPics = document.getElementById("outdoorshoottotal");
+var totalStudioPics = document.getElementById("studioshoottotal");
 var totalOutdoorPicsNumber = document.getElementById("numberofoutdoorpics");
 var hideParaText = document.getElementById("dresslimit");
 
@@ -22,9 +23,14 @@ var totalOutdoorPicsPrice = Math.floor(outdoorPics.value * 20);
 totalOutdoorPics.style.color = "black";
 totalOutdoorPics.innerHTML = `<strong> ${totalOutdoorPicsPrice} </strong>`;
 
+var totalStudioPicsPrice = Math.floor(outdoorPics.value * 10);
+totalOutdoorPics.style.color = "black";
+totalStudioPics.innerHTML = `<strong> ${totalStudioPicsPrice} </strong>`;
+
 
 
 console.log(totalOutdoorPics);
+console.log(totalStudioPics);
 
 
 if (outdoorPics.value == "1" || outdoorPics.value == "2" || outdoorPics.value == "3" || outdoorPics.value == "4" || outdoorPics.value == "5" || outdoorPics.value == "6" || outdoorPics.value == "7" || outdoorPics.value == "8" || outdoorPics.value == "9" || outdoorPics.value == "10" || outdoorPics.value == "11" || outdoorPics.value == "12" || outdoorPics.value == "13" || outdoorPics.value == "14" || outdoorPics.value == "15")  
@@ -62,5 +68,22 @@ if (outdoorPics.value == "1" || outdoorPics.value == "2" || outdoorPics.value ==
 
    	
 return false;
+}
+
+
+
+
+
+function validateTotalCost(){
+
+	if (outdoorPics.value == "1" || outdoorPics.value == "2" || outdoorPics.value == "3" || outdoorPics.value == "4" || outdoorPics.value == "5" || outdoorPics.value == "6" || outdoorPics.value == "7" || outdoorPics.value == "8" || outdoorPics.value == "9")  
+   	{
+   		
+   		alert("You cannot select less than 10 pictures in this package");
+   	
+   	}
+   	
+   	return false;
+
 }
 
