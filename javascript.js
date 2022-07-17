@@ -87,3 +87,8 @@ function validateTotalCost(){
 
 }
 
+
+function printPage() {
+	window.print()
+}
+

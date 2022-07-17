@@ -776,6 +776,24 @@ marquee{
 
 
 
+/*=========================================The Print Button=============================*/
+#printbutton{
+	 width:50px;
+	 color: black;
+}
+
+h1 #printbutton:hover{
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 5px;
+
+}
+
+
+
+
+
 
    
 /* Style inputs with type="text", select elements and textareas */
